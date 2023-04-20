@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>toolpocket_app package &mdash; documentación de toolpocket - 1.0</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            toolpocket
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">toolpocket_app package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-toolpocket_app.admin">toolpocket_app.admin module</a></li>
+<li><a class="reference internal" href="#module-toolpocket_app.apps">toolpocket_app.apps module</a><ul>
+<li><a class="reference internal" href="#toolpocket_app.apps.ToolpocketAppConfig"><code class="docutils literal notranslate"><span class="pre">ToolpocketAppConfig</span></code></a><ul>
+<li><a class="reference internal" href="#toolpocket_app.apps.ToolpocketAppConfig.default_auto_field"><code class="docutils literal notranslate"><span class="pre">ToolpocketAppConfig.default_auto_field</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.apps.ToolpocketAppConfig.name"><code class="docutils literal notranslate"><span class="pre">ToolpocketAppConfig.name</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.apps.ToolpocketAppConfig.ready"><code class="docutils literal notranslate"><span class="pre">ToolpocketAppConfig.ready()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-toolpocket_app.forms">toolpocket_app.forms module</a><ul>
+<li><a class="reference internal" href="#toolpocket_app.forms.CustomUserForm"><code class="docutils literal notranslate"><span class="pre">CustomUserForm</span></code></a><ul>
+<li><a class="reference internal" href="#toolpocket_app.forms.CustomUserForm.Meta"><code class="docutils literal notranslate"><span class="pre">CustomUserForm.Meta</span></code></a><ul>
+<li><a class="reference internal" href="#toolpocket_app.forms.CustomUserForm.Meta.fields"><code class="docutils literal notranslate"><span class="pre">CustomUserForm.Meta.fields</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.forms.CustomUserForm.Meta.model"><code class="docutils literal notranslate"><span class="pre">CustomUserForm.Meta.model</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#toolpocket_app.forms.CustomUserForm.base_fields"><code class="docutils literal notranslate"><span class="pre">CustomUserForm.base_fields</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.forms.CustomUserForm.declared_fields"><code class="docutils literal notranslate"><span class="pre">CustomUserForm.declared_fields</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.forms.CustomUserForm.media"><code class="docutils literal notranslate"><span class="pre">CustomUserForm.media</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#toolpocket_app.forms.ProfileUpdateForm"><code class="docutils literal notranslate"><span class="pre">ProfileUpdateForm</span></code></a><ul>
+<li><a class="reference internal" href="#toolpocket_app.forms.ProfileUpdateForm.Meta"><code class="docutils literal notranslate"><span class="pre">ProfileUpdateForm.Meta</span></code></a><ul>
+<li><a class="reference internal" href="#toolpocket_app.forms.ProfileUpdateForm.Meta.fields"><code class="docutils literal notranslate"><span class="pre">ProfileUpdateForm.Meta.fields</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.forms.ProfileUpdateForm.Meta.model"><code class="docutils literal notranslate"><span class="pre">ProfileUpdateForm.Meta.model</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#toolpocket_app.forms.ProfileUpdateForm.base_fields"><code class="docutils literal notranslate"><span class="pre">ProfileUpdateForm.base_fields</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.forms.ProfileUpdateForm.declared_fields"><code class="docutils literal notranslate"><span class="pre">ProfileUpdateForm.declared_fields</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.forms.ProfileUpdateForm.media"><code class="docutils literal notranslate"><span class="pre">ProfileUpdateForm.media</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#toolpocket_app.forms.UserUpdateForm"><code class="docutils literal notranslate"><span class="pre">UserUpdateForm</span></code></a><ul>
+<li><a class="reference internal" href="#toolpocket_app.forms.UserUpdateForm.Meta"><code class="docutils literal notranslate"><span class="pre">UserUpdateForm.Meta</span></code></a><ul>
+<li><a class="reference internal" href="#toolpocket_app.forms.UserUpdateForm.Meta.fields"><code class="docutils literal notranslate"><span class="pre">UserUpdateForm.Meta.fields</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.forms.UserUpdateForm.Meta.model"><code class="docutils literal notranslate"><span class="pre">UserUpdateForm.Meta.model</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#toolpocket_app.forms.UserUpdateForm.base_fields"><code class="docutils literal notranslate"><span class="pre">UserUpdateForm.base_fields</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.forms.UserUpdateForm.declared_fields"><code class="docutils literal notranslate"><span class="pre">UserUpdateForm.declared_fields</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.forms.UserUpdateForm.media"><code class="docutils literal notranslate"><span class="pre">UserUpdateForm.media</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-toolpocket_app.models">toolpocket_app.models module</a><ul>
+<li><a class="reference internal" href="#toolpocket_app.models.Category"><code class="docutils literal notranslate"><span class="pre">Category</span></code></a><ul>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">Category.DoesNotExist</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.MultipleObjectsReturned"><code class="docutils literal notranslate"><span class="pre">Category.MultipleObjectsReturned</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.created_at"><code class="docutils literal notranslate"><span class="pre">Category.created_at</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.description"><code class="docutils literal notranslate"><span class="pre">Category.description</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.get_next_by_created_at"><code class="docutils literal notranslate"><span class="pre">Category.get_next_by_created_at()</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.get_previous_by_created_at"><code class="docutils literal notranslate"><span class="pre">Category.get_previous_by_created_at()</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.id"><code class="docutils literal notranslate"><span class="pre">Category.id</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.image"><code class="docutils literal notranslate"><span class="pre">Category.image</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.meta_description"><code class="docutils literal notranslate"><span class="pre">Category.meta_description</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.meta_keywords"><code class="docutils literal notranslate"><span class="pre">Category.meta_keywords</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.meta_title"><code class="docutils literal notranslate"><span class="pre">Category.meta_title</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.name"><code class="docutils literal notranslate"><span class="pre">Category.name</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.objects"><code class="docutils literal notranslate"><span class="pre">Category.objects</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.product_set"><code class="docutils literal notranslate"><span class="pre">Category.product_set</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.slug"><code class="docutils literal notranslate"><span class="pre">Category.slug</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.small_description"><code class="docutils literal notranslate"><span class="pre">Category.small_description</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.status"><code class="docutils literal notranslate"><span class="pre">Category.status</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Category.trending"><code class="docutils literal notranslate"><span class="pre">Category.trending</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product"><code class="docutils literal notranslate"><span class="pre">Product</span></code></a><ul>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">Product.DoesNotExist</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.MultipleObjectsReturned"><code class="docutils literal notranslate"><span class="pre">Product.MultipleObjectsReturned</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.category"><code class="docutils literal notranslate"><span class="pre">Product.category</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.category_id"><code class="docutils literal notranslate"><span class="pre">Product.category_id</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.created_at"><code class="docutils literal notranslate"><span class="pre">Product.created_at</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.description"><code class="docutils literal notranslate"><span class="pre">Product.description</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.get_next_by_created_at"><code class="docutils literal notranslate"><span class="pre">Product.get_next_by_created_at()</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.get_previous_by_created_at"><code class="docutils literal notranslate"><span class="pre">Product.get_previous_by_created_at()</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.id"><code class="docutils literal notranslate"><span class="pre">Product.id</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.link"><code class="docutils literal notranslate"><span class="pre">Product.link</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.meta_description"><code class="docutils literal notranslate"><span class="pre">Product.meta_description</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.meta_keywords"><code class="docutils literal notranslate"><span class="pre">Product.meta_keywords</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.meta_title"><code class="docutils literal notranslate"><span class="pre">Product.meta_title</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.name"><code class="docutils literal notranslate"><span class="pre">Product.name</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.objects"><code class="docutils literal notranslate"><span class="pre">Product.objects</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.product_image"><code class="docutils literal notranslate"><span class="pre">Product.product_image</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.profile_set"><code class="docutils literal notranslate"><span class="pre">Product.profile_set</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.slug"><code class="docutils literal notranslate"><span class="pre">Product.slug</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.status"><code class="docutils literal notranslate"><span class="pre">Product.status</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.tag"><code class="docutils literal notranslate"><span class="pre">Product.tag</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Product.trending"><code class="docutils literal notranslate"><span class="pre">Product.trending</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#toolpocket_app.models.Profile"><code class="docutils literal notranslate"><span class="pre">Profile</span></code></a><ul>
+<li><a class="reference internal" href="#toolpocket_app.models.Profile.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">Profile.DoesNotExist</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Profile.MultipleObjectsReturned"><code class="docutils literal notranslate"><span class="pre">Profile.MultipleObjectsReturned</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Profile.favorite_products"><code class="docutils literal notranslate"><span class="pre">Profile.favorite_products</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Profile.id"><code class="docutils literal notranslate"><span class="pre">Profile.id</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Profile.image"><code class="docutils literal notranslate"><span class="pre">Profile.image</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Profile.objects"><code class="docutils literal notranslate"><span class="pre">Profile.objects</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Profile.save"><code class="docutils literal notranslate"><span class="pre">Profile.save()</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Profile.user"><code class="docutils literal notranslate"><span class="pre">Profile.user</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.Profile.user_id"><code class="docutils literal notranslate"><span class="pre">Profile.user_id</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#toolpocket_app.models.get_file_path"><code class="docutils literal notranslate"><span class="pre">get_file_path()</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.models.get_file_path1"><code class="docutils literal notranslate"><span class="pre">get_file_path1()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-toolpocket_app.signals">toolpocket_app.signals module</a><ul>
+<li><a class="reference internal" href="#toolpocket_app.signals.crear_profile"><code class="docutils literal notranslate"><span class="pre">crear_profile()</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.signals.save_profile"><code class="docutils literal notranslate"><span class="pre">save_profile()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-toolpocket_app.tests">toolpocket_app.tests module</a></li>
+<li><a class="reference internal" href="#module-toolpocket_app.urls">toolpocket_app.urls module</a></li>
+<li><a class="reference internal" href="#module-toolpocket_app.views">toolpocket_app.views module</a><ul>
+<li><a class="reference internal" href="#toolpocket_app.views.add_to_favorites"><code class="docutils literal notranslate"><span class="pre">add_to_favorites()</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.views.collections"><code class="docutils literal notranslate"><span class="pre">collections()</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.views.collectionsview"><code class="docutils literal notranslate"><span class="pre">collectionsview()</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.views.home"><code class="docutils literal notranslate"><span class="pre">home()</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.views.productview"><code class="docutils literal notranslate"><span class="pre">productview()</span></code></a></li>
+<li><a class="reference internal" href="#toolpocket_app.views.profile"><code class="docutils literal notranslate"><span class="pre">profile()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-toolpocket_app">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">toolpocket</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">toolpocket_app package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/toolpocket_app.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="toolpocket-app-package">
+<h1>toolpocket_app package<a class="headerlink" href="#toolpocket-app-package" title="Enlace permanente a este encabezado"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Enlace permanente a este encabezado"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="toolpocket_app.controller.html">toolpocket_app.controller package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="toolpocket_app.controller.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toolpocket_app.controller.html#module-toolpocket_app.controller.authview">toolpocket_app.controller.authview module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="toolpocket_app.controller.html#toolpocket_app.controller.authview.loginpage"><code class="docutils literal notranslate"><span class="pre">loginpage()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="toolpocket_app.controller.html#toolpocket_app.controller.authview.logoutpage"><code class="docutils literal notranslate"><span class="pre">logoutpage()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="toolpocket_app.controller.html#toolpocket_app.controller.authview.register"><code class="docutils literal notranslate"><span class="pre">register()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="toolpocket_app.controller.html#module-toolpocket_app.controller">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="toolpocket_app.migrations.html">toolpocket_app.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="toolpocket_app.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toolpocket_app.migrations.html#module-toolpocket_app.migrations.0001_initial">toolpocket_app.migrations.0001_initial module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="toolpocket_app.migrations.html#toolpocket_app.migrations.0001_initial.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="toolpocket_app.migrations.html#toolpocket_app.migrations.0001_initial.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="toolpocket_app.migrations.html#toolpocket_app.migrations.0001_initial.Migration.initial"><code class="docutils literal notranslate"><span class="pre">Migration.initial</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="toolpocket_app.migrations.html#toolpocket_app.migrations.0001_initial.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="toolpocket_app.migrations.html#module-toolpocket_app.migrations.0002_product_link">toolpocket_app.migrations.0002_product_link module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="toolpocket_app.migrations.html#toolpocket_app.migrations.0002_product_link.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="toolpocket_app.migrations.html#toolpocket_app.migrations.0002_product_link.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="toolpocket_app.migrations.html#toolpocket_app.migrations.0002_product_link.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="toolpocket_app.migrations.html#module-toolpocket_app.migrations.0003_profile">toolpocket_app.migrations.0003_profile module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="toolpocket_app.migrations.html#toolpocket_app.migrations.0003_profile.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="toolpocket_app.migrations.html#toolpocket_app.migrations.0003_profile.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="toolpocket_app.migrations.html#toolpocket_app.migrations.0003_profile.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="toolpocket_app.migrations.html#module-toolpocket_app.migrations.0004_profile_favorite_products">toolpocket_app.migrations.0004_profile_favorite_products module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="toolpocket_app.migrations.html#toolpocket_app.migrations.0004_profile_favorite_products.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="toolpocket_app.migrations.html#toolpocket_app.migrations.0004_profile_favorite_products.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="toolpocket_app.migrations.html#toolpocket_app.migrations.0004_profile_favorite_products.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="toolpocket_app.migrations.html#module-toolpocket_app.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Enlace permanente a este encabezado"></a></h2>
+</section>
+<section id="module-toolpocket_app.admin">
+<span id="toolpocket-app-admin-module"></span><h2>toolpocket_app.admin module<a class="headerlink" href="#module-toolpocket_app.admin" title="Enlace permanente a este encabezado"></a></h2>
+</section>
+<section id="module-toolpocket_app.apps">
+<span id="toolpocket-app-apps-module"></span><h2>toolpocket_app.apps module<a class="headerlink" href="#module-toolpocket_app.apps" title="Enlace permanente a este encabezado"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="toolpocket_app.apps.ToolpocketAppConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">toolpocket_app.apps.</span></span><span class="sig-name descname"><span class="pre">ToolpocketAppConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/apps.html#ToolpocketAppConfig"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.apps.ToolpocketAppConfig" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
+<p>Configuración de la aplicación “toolpocket_app” en Django.</p>
+<dl>
+<dt>Atributos:</dt><dd><dl class="simple">
+<dt>default_auto_field (str): Especifica el tipo de campo automático utilizado para campos de clave primaria en modelos.</dt><dd><p>En este caso, se utiliza “django.db.models.BigAutoField”.</p>
+</dd>
+</dl>
+<p>name (str): Especifica el nombre de la aplicación.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.apps.ToolpocketAppConfig.default_auto_field">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'django.db.models.BigAutoField'</span></em><a class="headerlink" href="#toolpocket_app.apps.ToolpocketAppConfig.default_auto_field" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.apps.ToolpocketAppConfig.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'toolpocket_app'</span></em><a class="headerlink" href="#toolpocket_app.apps.ToolpocketAppConfig.name" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="toolpocket_app.apps.ToolpocketAppConfig.ready">
+<span class="sig-name descname"><span class="pre">ready</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/apps.html#ToolpocketAppConfig.ready"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.apps.ToolpocketAppConfig.ready" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Método que se ejecuta cuando la aplicación está lista para su uso.</p>
+<p>Se encarga de importar el archivo de señales “toolpocket_app.signals” para asegurarse de que las señales
+estén registradas y sean funcionales en la aplicación.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-toolpocket_app.forms">
+<span id="toolpocket-app-forms-module"></span><h2>toolpocket_app.forms module<a class="headerlink" href="#module-toolpocket_app.forms" title="Enlace permanente a este encabezado"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="toolpocket_app.forms.CustomUserForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">toolpocket_app.forms.</span></span><span class="sig-name descname"><span class="pre">CustomUserForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/forms.html#CustomUserForm"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.forms.CustomUserForm" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">UserCreationForm</span></code></p>
+<p>Formulario personalizado de registro de usuario.</p>
+<p>Este formulario hereda de UserCreationForm de Django y personaliza la apariencia y validación
+de los campos de usuario, email y contraseña.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>username (CharField): Campo de texto para el nombre de usuario.
+email (CharField): Campo de texto para el email del usuario.
+password1 (CharField): Campo de contraseña para la contraseña del usuario.
+password2 (CharField): Campo de contraseña para confirmar la contraseña del usuario.
+Meta (class): Clase Meta para configurar el modelo y los campos del formulario.</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="toolpocket_app.forms.CustomUserForm.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="_modules/toolpocket_app/forms.html#CustomUserForm.Meta"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.forms.CustomUserForm.Meta" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.forms.CustomUserForm.Meta.fields">
+<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['username',</span> <span class="pre">'email',</span> <span class="pre">'password1',</span> <span class="pre">'password2']</span></em><a class="headerlink" href="#toolpocket_app.forms.CustomUserForm.Meta.fields" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.forms.CustomUserForm.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#toolpocket_app.forms.CustomUserForm.Meta.model" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>alias de <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.forms.CustomUserForm.base_fields">
+<span class="sig-name descname"><span class="pre">base_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'email':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'password1':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'password2':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'username':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#toolpocket_app.forms.CustomUserForm.base_fields" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.forms.CustomUserForm.declared_fields">
+<span class="sig-name descname"><span class="pre">declared_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'email':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'password1':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'password2':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'username':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#toolpocket_app.forms.CustomUserForm.declared_fields" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="toolpocket_app.forms.CustomUserForm.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#toolpocket_app.forms.CustomUserForm.media" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="toolpocket_app.forms.ProfileUpdateForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">toolpocket_app.forms.</span></span><span class="sig-name descname"><span class="pre">ProfileUpdateForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_id='id_%s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_class=&lt;class</span> <span class="pre">'django.forms.utils.ErrorList'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_suffix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">empty_permitted=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_required_attribute=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">renderer=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/forms.html#ProfileUpdateForm"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.forms.ProfileUpdateForm" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelForm</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="toolpocket_app.forms.ProfileUpdateForm.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="_modules/toolpocket_app/forms.html#ProfileUpdateForm.Meta"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.forms.ProfileUpdateForm.Meta" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.forms.ProfileUpdateForm.Meta.fields">
+<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['image']</span></em><a class="headerlink" href="#toolpocket_app.forms.ProfileUpdateForm.Meta.fields" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.forms.ProfileUpdateForm.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#toolpocket_app.forms.ProfileUpdateForm.Meta.model" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>alias de <a class="reference internal" href="#toolpocket_app.models.Profile" title="toolpocket_app.models.Profile"><code class="xref py py-class docutils literal notranslate"><span class="pre">Profile</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.forms.ProfileUpdateForm.base_fields">
+<span class="sig-name descname"><span class="pre">base_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'image':</span> <span class="pre">&lt;django.forms.fields.ImageField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#toolpocket_app.forms.ProfileUpdateForm.base_fields" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.forms.ProfileUpdateForm.declared_fields">
+<span class="sig-name descname"><span class="pre">declared_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#toolpocket_app.forms.ProfileUpdateForm.declared_fields" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="toolpocket_app.forms.ProfileUpdateForm.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#toolpocket_app.forms.ProfileUpdateForm.media" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="toolpocket_app.forms.UserUpdateForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">toolpocket_app.forms.</span></span><span class="sig-name descname"><span class="pre">UserUpdateForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_id='id_%s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_class=&lt;class</span> <span class="pre">'django.forms.utils.ErrorList'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_suffix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">empty_permitted=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_required_attribute=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">renderer=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/forms.html#UserUpdateForm"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.forms.UserUpdateForm" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelForm</span></code></p>
+<p>Formulario para actualizar la información de usuario.</p>
+<p>Este formulario permite a los usuarios actualizar su nombre de usuario y email.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>Meta (class): Clase Meta para configurar el modelo y los campos del formulario.</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="toolpocket_app.forms.UserUpdateForm.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="_modules/toolpocket_app/forms.html#UserUpdateForm.Meta"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.forms.UserUpdateForm.Meta" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Formulario para actualizar la imagen de perfil de usuario.</p>
+<p>Este formulario permite a los usuarios actualizar su imagen de perfil.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>Meta (class): Clase Meta para configurar el modelo y los campos del formulario.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.forms.UserUpdateForm.Meta.fields">
+<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['username',</span> <span class="pre">'email']</span></em><a class="headerlink" href="#toolpocket_app.forms.UserUpdateForm.Meta.fields" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.forms.UserUpdateForm.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#toolpocket_app.forms.UserUpdateForm.Meta.model" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>alias de <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.forms.UserUpdateForm.base_fields">
+<span class="sig-name descname"><span class="pre">base_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'email':</span> <span class="pre">&lt;django.forms.fields.EmailField</span> <span class="pre">object&gt;,</span> <span class="pre">'username':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#toolpocket_app.forms.UserUpdateForm.base_fields" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.forms.UserUpdateForm.declared_fields">
+<span class="sig-name descname"><span class="pre">declared_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#toolpocket_app.forms.UserUpdateForm.declared_fields" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="toolpocket_app.forms.UserUpdateForm.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#toolpocket_app.forms.UserUpdateForm.media" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-toolpocket_app.models">
+<span id="toolpocket-app-models-module"></span><h2>toolpocket_app.models module<a class="headerlink" href="#module-toolpocket_app.models" title="Enlace permanente a este encabezado"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">toolpocket_app.models.</span></span><span class="sig-name descname"><span class="pre">Category</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/models.html#Category"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.models.Category" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>Modelo para representar una categoría de productos en la base de datos.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>slug (str): El slug de la categoría.
+name (str): El nombre de la categoría.
+image (ImageField): Una imagen asociada a la categoría.
+description (str): La descripción de la categoría.
+small_description (str): Una descripción breve de la categoría.
+status (bool): El estado de la categoría (0=default, 1=Hidden).
+trending (bool): Indica si la categoría está en tendencia (0=default, 1=Trending).
+meta_title (str): El título meta de la categoría.
+meta_keywords (str): Las palabras clave meta de la categoría.
+meta_description (str): La descripción meta de la categoría.
+created_at (DateTimeField): La fecha y hora de creación de la categoría.
+objects (Manager): El administrador de objetos del modelo.</p>
+</dd>
+<dt>Methods:</dt><dd><p>__str__(): Retorna el nombre de la categoría como representación en cadena del objeto.</p>
+</dd>
+</dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#toolpocket_app.models.Category.DoesNotExist" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#toolpocket_app.models.Category.MultipleObjectsReturned" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.created_at">
+<span class="sig-name descname"><span class="pre">created_at</span></span><a class="headerlink" href="#toolpocket_app.models.Category.created_at" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.description">
+<span class="sig-name descname"><span class="pre">description</span></span><a class="headerlink" href="#toolpocket_app.models.Category.description" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.get_next_by_created_at">
+<span class="sig-name descname"><span class="pre">get_next_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#toolpocket_app.models.Category.get_next_by_created_at" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.get_previous_by_created_at">
+<span class="sig-name descname"><span class="pre">get_previous_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#toolpocket_app.models.Category.get_previous_by_created_at" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#toolpocket_app.models.Category.id" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.image">
+<span class="sig-name descname"><span class="pre">image</span></span><a class="headerlink" href="#toolpocket_app.models.Category.image" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Just like the FileDescriptor, but for ImageFields. The only difference is
+assigning the width/height to the width_field/height_field, if appropriate.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.meta_description">
+<span class="sig-name descname"><span class="pre">meta_description</span></span><a class="headerlink" href="#toolpocket_app.models.Category.meta_description" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.meta_keywords">
+<span class="sig-name descname"><span class="pre">meta_keywords</span></span><a class="headerlink" href="#toolpocket_app.models.Category.meta_keywords" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.meta_title">
+<span class="sig-name descname"><span class="pre">meta_title</span></span><a class="headerlink" href="#toolpocket_app.models.Category.meta_title" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#toolpocket_app.models.Category.name" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#toolpocket_app.models.Category.objects" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.product_set">
+<span class="sig-name descname"><span class="pre">product_set</span></span><a class="headerlink" href="#toolpocket_app.models.Category.product_set" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.slug">
+<span class="sig-name descname"><span class="pre">slug</span></span><a class="headerlink" href="#toolpocket_app.models.Category.slug" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.small_description">
+<span class="sig-name descname"><span class="pre">small_description</span></span><a class="headerlink" href="#toolpocket_app.models.Category.small_description" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.status">
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#toolpocket_app.models.Category.status" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Category.trending">
+<span class="sig-name descname"><span class="pre">trending</span></span><a class="headerlink" href="#toolpocket_app.models.Category.trending" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">toolpocket_app.models.</span></span><span class="sig-name descname"><span class="pre">Product</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/models.html#Product"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.models.Product" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>Modelo para representar un producto en la base de datos.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>category (ForeignKey): La categoría del producto a la que está asociado.
+slug (str): El slug del producto.
+name (str): El nombre del producto.
+link (str): El enlace del producto.
+product_image (ImageField): Una imagen asociada al producto.
+description (str): La descripción del producto.
+status (bool): El estado del producto (0=default, 1=Hidden).
+trending (bool): Indica si el producto está en tendencia (0=default, 1=Trending).
+tag (str): La etiqueta del producto.
+meta_title (str): El título meta del producto.
+meta_keywords (str): Las palabras clave meta del producto.
+meta_description (str): La descripción meta del producto.
+created_at (DateTimeField): La fecha y hora de creación del producto.
+objects (Manager): El administrador de objetos del modelo.</p>
+</dd>
+<dt>Methods:</dt><dd><p>__str__(): Retorna el nombre del producto como representación en cadena del objeto.</p>
+</dd>
+</dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#toolpocket_app.models.Product.DoesNotExist" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#toolpocket_app.models.Product.MultipleObjectsReturned" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.category">
+<span class="sig-name descname"><span class="pre">category</span></span><a class="headerlink" href="#toolpocket_app.models.Product.category" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.category_id">
+<span class="sig-name descname"><span class="pre">category_id</span></span><a class="headerlink" href="#toolpocket_app.models.Product.category_id" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.created_at">
+<span class="sig-name descname"><span class="pre">created_at</span></span><a class="headerlink" href="#toolpocket_app.models.Product.created_at" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.description">
+<span class="sig-name descname"><span class="pre">description</span></span><a class="headerlink" href="#toolpocket_app.models.Product.description" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.get_next_by_created_at">
+<span class="sig-name descname"><span class="pre">get_next_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#toolpocket_app.models.Product.get_next_by_created_at" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.get_previous_by_created_at">
+<span class="sig-name descname"><span class="pre">get_previous_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#toolpocket_app.models.Product.get_previous_by_created_at" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#toolpocket_app.models.Product.id" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.link">
+<span class="sig-name descname"><span class="pre">link</span></span><a class="headerlink" href="#toolpocket_app.models.Product.link" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.meta_description">
+<span class="sig-name descname"><span class="pre">meta_description</span></span><a class="headerlink" href="#toolpocket_app.models.Product.meta_description" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.meta_keywords">
+<span class="sig-name descname"><span class="pre">meta_keywords</span></span><a class="headerlink" href="#toolpocket_app.models.Product.meta_keywords" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.meta_title">
+<span class="sig-name descname"><span class="pre">meta_title</span></span><a class="headerlink" href="#toolpocket_app.models.Product.meta_title" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#toolpocket_app.models.Product.name" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#toolpocket_app.models.Product.objects" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.product_image">
+<span class="sig-name descname"><span class="pre">product_image</span></span><a class="headerlink" href="#toolpocket_app.models.Product.product_image" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Just like the FileDescriptor, but for ImageFields. The only difference is
+assigning the width/height to the width_field/height_field, if appropriate.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.profile_set">
+<span class="sig-name descname"><span class="pre">profile_set</span></span><a class="headerlink" href="#toolpocket_app.models.Product.profile_set" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Accessor to the related objects manager on the forward and reverse sides of
+a many-to-many relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Pizza</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">toppings</span> <span class="o">=</span> <span class="n">ManyToManyField</span><span class="p">(</span><span class="n">Topping</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;pizzas&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Pizza.toppings</span></code> and <code class="docutils literal notranslate"><span class="pre">Topping.pizzas</span></code> are <code class="docutils literal notranslate"><span class="pre">ManyToManyDescriptor</span></code>
+instances.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.slug">
+<span class="sig-name descname"><span class="pre">slug</span></span><a class="headerlink" href="#toolpocket_app.models.Product.slug" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.status">
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#toolpocket_app.models.Product.status" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.tag">
+<span class="sig-name descname"><span class="pre">tag</span></span><a class="headerlink" href="#toolpocket_app.models.Product.tag" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Product.trending">
+<span class="sig-name descname"><span class="pre">trending</span></span><a class="headerlink" href="#toolpocket_app.models.Product.trending" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="toolpocket_app.models.Profile">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">toolpocket_app.models.</span></span><span class="sig-name descname"><span class="pre">Profile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/models.html#Profile"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.models.Profile" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>Modelo para representar el perfil de usuario en la base de datos.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>user (OneToOneField): El usuario al que está asociado el perfil.
+favorite_products (ManyToManyField): Los productos favoritos asociados al perfil.
+image (ImageField): Una imagen asociada al perfil.
+objects (Manager): El administrador de objetos del modelo.</p>
+</dd>
+<dt>Methods:</dt><dd><p>save(<a href="#id1"><span class="problematic" id="id2">*</span></a>args, <a href="#id3"><span class="problematic" id="id4">**</span></a>kwargs): Sobreescribe el método save() para procesar la imagen del perfil antes de guardarla.
+__str__(): Retorna una representación en cadena del objeto.</p>
+</dd>
+</dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="toolpocket_app.models.Profile.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#toolpocket_app.models.Profile.DoesNotExist" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="toolpocket_app.models.Profile.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#toolpocket_app.models.Profile.MultipleObjectsReturned" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Profile.favorite_products">
+<span class="sig-name descname"><span class="pre">favorite_products</span></span><a class="headerlink" href="#toolpocket_app.models.Profile.favorite_products" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Accessor to the related objects manager on the forward and reverse sides of
+a many-to-many relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Pizza</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">toppings</span> <span class="o">=</span> <span class="n">ManyToManyField</span><span class="p">(</span><span class="n">Topping</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;pizzas&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Pizza.toppings</span></code> and <code class="docutils literal notranslate"><span class="pre">Topping.pizzas</span></code> are <code class="docutils literal notranslate"><span class="pre">ManyToManyDescriptor</span></code>
+instances.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Profile.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#toolpocket_app.models.Profile.id" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Profile.image">
+<span class="sig-name descname"><span class="pre">image</span></span><a class="headerlink" href="#toolpocket_app.models.Profile.image" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Just like the FileDescriptor, but for ImageFields. The only difference is
+assigning the width/height to the width_field/height_field, if appropriate.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Profile.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#toolpocket_app.models.Profile.objects" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="toolpocket_app.models.Profile.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/models.html#Profile.save"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.models.Profile.save" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Sobreescribe el método save() para procesar la imagen del perfil antes de guardarla.</p>
+<p>Este método se encarga de procesar la imagen del perfil antes de guardarla en la base de datos.
+Asegura que la imagen tenga un tamaño máximo de 300x300 píxeles antes de guardarla.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p><a href="#id5"><span class="problematic" id="id6">*</span></a>args: Argumentos posicionales pasados al método save().
+<a href="#id7"><span class="problematic" id="id8">**</span></a>kwargs: Argumentos de palabras clave pasados al método save().</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Profile.user">
+<span class="sig-name descname"><span class="pre">user</span></span><a class="headerlink" href="#toolpocket_app.models.Profile.user" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Accessor to the related object on the forward side of a one-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Restaurant</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">place</span> <span class="o">=</span> <span class="n">OneToOneField</span><span class="p">(</span><span class="n">Place</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;restaurant&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Restaurant.place</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardOneToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="toolpocket_app.models.Profile.user_id">
+<span class="sig-name descname"><span class="pre">user_id</span></span><a class="headerlink" href="#toolpocket_app.models.Profile.user_id" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolpocket_app.models.get_file_path">
+<span class="sig-prename descclassname"><span class="pre">toolpocket_app.models.</span></span><span class="sig-name descname"><span class="pre">get_file_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/models.html#get_file_path"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.models.get_file_path" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolpocket_app.models.get_file_path1">
+<span class="sig-prename descclassname"><span class="pre">toolpocket_app.models.</span></span><span class="sig-name descname"><span class="pre">get_file_path1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/models.html#get_file_path1"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.models.get_file_path1" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-toolpocket_app.signals">
+<span id="toolpocket-app-signals-module"></span><h2>toolpocket_app.signals module<a class="headerlink" href="#module-toolpocket_app.signals" title="Enlace permanente a este encabezado"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="toolpocket_app.signals.crear_profile">
+<span class="sig-prename descclassname"><span class="pre">toolpocket_app.signals.</span></span><span class="sig-name descname"><span class="pre">crear_profile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sender</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/signals.html#crear_profile"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.signals.crear_profile" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Crea automáticamente un perfil de usuario cuando se crea un nuevo objeto User en el modelo de base de datos.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>sender (type): El modelo que envía la señal (en este caso, User).
+instance (User): La instancia del objeto User que se acaba de guardar.
+created (bool): Indica si el objeto User se acaba de crear o no.
+<a href="#id9"><span class="problematic" id="id10">**</span></a>kwargs: Otros argumentos pasados a la función (no utilizados en esta función).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolpocket_app.signals.save_profile">
+<span class="sig-prename descclassname"><span class="pre">toolpocket_app.signals.</span></span><span class="sig-name descname"><span class="pre">save_profile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sender</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/signals.html#save_profile"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.signals.save_profile" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Guarda automáticamente el perfil de usuario después de guardar un objeto User en el modelo de base de datos.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>sender (type): El modelo que envía la señal (en este caso, User).
+instance (User): La instancia del objeto User que se acaba de guardar.
+<a href="#id11"><span class="problematic" id="id12">**</span></a>kwargs: Otros argumentos pasados a la función (no utilizados en esta función).</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-toolpocket_app.tests">
+<span id="toolpocket-app-tests-module"></span><h2>toolpocket_app.tests module<a class="headerlink" href="#module-toolpocket_app.tests" title="Enlace permanente a este encabezado"></a></h2>
+</section>
+<section id="module-toolpocket_app.urls">
+<span id="toolpocket-app-urls-module"></span><h2>toolpocket_app.urls module<a class="headerlink" href="#module-toolpocket_app.urls" title="Enlace permanente a este encabezado"></a></h2>
+</section>
+<section id="module-toolpocket_app.views">
+<span id="toolpocket-app-views-module"></span><h2>toolpocket_app.views module<a class="headerlink" href="#module-toolpocket_app.views" title="Enlace permanente a este encabezado"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="toolpocket_app.views.add_to_favorites">
+<span class="sig-prename descclassname"><span class="pre">toolpocket_app.views.</span></span><span class="sig-name descname"><span class="pre">add_to_favorites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/views.html#add_to_favorites"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.views.add_to_favorites" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Vista para agregar un producto a favoritos.</p>
+<p>Verifica si el usuario está autenticado y si la solicitud es de tipo POST. Obtiene el ID del
+producto de la solicitud POST y busca el producto correspondiente en la base de datos. Obtiene
+el perfil de usuario asociado al usuario autenticado y agrega el producto a la lista de
+productos favoritos del perfil. Muestra un mensaje de éxito y redirige a la página de inicio.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>HttpResponse: El objeto de respuesta HTTP que redirige a la página de inicio.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolpocket_app.views.collections">
+<span class="sig-prename descclassname"><span class="pre">toolpocket_app.views.</span></span><span class="sig-name descname"><span class="pre">collections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/views.html#collections"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.views.collections" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><blockquote>
+<div><p>Vista para la página de colecciones.</p>
+<p>Filtra categorías con estado “0” y crea un contexto para renderizar la plantilla
+“toolpocket_app/collections.html” con las categorías obtenidas.</p>
+</div></blockquote>
+<p>Returns:
+HttpResponse: El objeto de respuesta HTTP que renderiza la página de vista de colecciones.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolpocket_app.views.collectionsview">
+<span class="sig-prename descclassname"><span class="pre">toolpocket_app.views.</span></span><span class="sig-name descname"><span class="pre">collectionsview</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">slug</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/views.html#collectionsview"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.views.collectionsview" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Vista para la página de vista de colecciones.</p>
+<p>Verifica si existe una categoría con el slug dado y estado “0”. Si existe, filtra los productos
+asociados a dicha categoría y crea un contexto para renderizar la plantilla
+“toolpocket_app/products/index.html” con los productos y la categoría obtenidos. Si no existe,
+muestra un mensaje de advertencia y redirige a la página de colecciones.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolpocket_app.views.home">
+<span class="sig-prename descclassname"><span class="pre">toolpocket_app.views.</span></span><span class="sig-name descname"><span class="pre">home</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/views.html#home"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.views.home" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Vista para la página de inicio.</p>
+<p>Filtra categorías y productos con estado “0” y crea un contexto para renderizar la plantilla
+“toolpocket_app/index.html” con las categorías y productos obtenidos.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>request (HttpRequest): El objeto de solicitud HTTP.</p>
+</dd>
+<dt>Returns:</dt><dd><p>HttpResponse: El objeto de respuesta HTTP que renderiza la página de inicio.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolpocket_app.views.productview">
+<span class="sig-prename descclassname"><span class="pre">toolpocket_app.views.</span></span><span class="sig-name descname"><span class="pre">productview</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cate_slug</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prod_slug</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/views.html#productview"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.views.productview" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Vista para la página de vista de productos.</p>
+<p>Verifica si existe una categoría y un producto con los slugs dados y estados “0”. Si existen,
+filtra el producto asociado al slug de producto dado y crea un contexto para renderizar la
+plantilla “toolpocket_app/products/view.html” con el producto obtenido. Si no existen, muestra
+un mensaje de error y redirige a la página de colecciones.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>HttpResponse: El objeto de respuesta HTTP que renderiza la página de vista de productos.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolpocket_app.views.profile">
+<span class="sig-prename descclassname"><span class="pre">toolpocket_app.views.</span></span><span class="sig-name descname"><span class="pre">profile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/toolpocket_app/views.html#profile"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#toolpocket_app.views.profile" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-toolpocket_app">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-toolpocket_app" title="Enlace permanente a este encabezado"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2023, Edgar&#39;s team.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
